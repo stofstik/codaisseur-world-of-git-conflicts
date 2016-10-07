@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20160808171221) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "valley_id"
-    t.string   "sound"
     t.string   "era"
     t.index ["valley_id"], name: "index_dinosaurs_on_valley_id", using: :btree
   end
