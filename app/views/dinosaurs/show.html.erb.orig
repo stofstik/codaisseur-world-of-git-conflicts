@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+<h1><%= @dinosaur.name %> <small><%= @dinosaur.sound %></small></h1>
+=======
+<div class="stars">
+<h1 class="blink"><%= @dinosaur.name %></h1>
+>>>>>>> master
+
+<p>Age: <%= @dinosaur.age %></p>
+<%= image_tag @dinosaur.image_url %>
+
+<hr>
+
+<%= link_to "[Edit]", edit_dinosaur_path(@dinosaur.id) %>
+<%= link_to "[Delete]", dinosaur_path( @dinosaur.id ), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
