@@ -1,7 +1,17 @@
 // Place all the styles related to the dinosaurs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 small{
-  color: red;
+.blink {
+  animation: blinker 1s linear infinite;
+}
+.stars{
+  background: #000 url('stars.gif') top left
+}
+h1{
+  color: deeppink;
   font-size: 14px;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }
